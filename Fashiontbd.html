@@ -1,44 +1,51 @@
 <!DOCTYPE html>
 <html>
-<head>
-</head>
-<style>
-</style>
-<script type="text/javascript">
-var pos = 0, Fashion_Finder_Quiz, quiz_results, questions, chA, chB, chC, chD, A=0, B=0, C=0 D=0
-var questions =[
-	["What climate do you live in ?", "Tropical", "Polar", "Dry", "Mild"],
-	["What do you prefer . . .?, "Dresses","Jeans", "Skirts", "All of the above"],
-	["What do you normaly wear of a daily basis?", "Work out clothing", "Casul Clothing", "Dressy CLothing", "What ever You feel like" ]
-];
-function _(x){
-	return document.getElementbyId(x);
-	}
-funtion renderQuestion(){
-	Fashion_Finder_Quiz = _("Fashion_Finder_Quiz");
-	if(pos >= questions.length){
-		Fashion_Finder_Quiz.innerHTML = "<h2> These are your results" of "+question+"<h2>
-			_("quiz_resuts").innerHTML = " Quiz Complete";
-			pos = 0;
-	}
-	("test_status").innerHTML = "Question "+(pos+1)+" of "+questions.length;
-	question = questions[pos][0];
-	chA = questions[pos][1];
-	chB = questions[pos][2];
-	chC = questions[pos][3];
-	chD = questions[pos][4];
-		Fashion_Finder_Quiz.innerHTML = "<h3>"+question+"</h3>";
-	Fashion_Finder_Quiz.innerHTML += "<input type='radio' name='choices' value='A'> "+chA+"<br>";
-	Fashion_Finder_Quiz.innerHTML += "<input type='radio' name='choices' value='B'> "+chB+"<br>";
-	Fashion_Finder_Quiz.innerHTML += "<input type='radio' name='choices' value='C'> "+chC+"<br>
-	Fashion_Finder_Quiz.innerHTML += "<input type='radio' name='choices' value='D'> "+chD+"<br><br>";
-	Fashion_Finder_Quiz.innerHTML += "<button onclick='checkAnswer()'>Submit Question</button>";
-		
-}
-	
-function choicestally(){
-</script>
-<h2 id="quiz_results"></h2>
-<div id="Fashion_Finder_Quiz"></div>
+  <head>
+    <style>
+    </style>
+  </head>
+
+  <body>
+  <script type="text/javascript">
+    var pos = 0, Fashion_Finder_Quiz, quiz_results, questions, chA, chB, chC, chD, choice_a = 0, choice_b = 0, choice_c = 0 choice_d = 0
+    var questions =[
+    	["What climate do you live in ?", "Tropical", "Polar", "Dry", "Mild"],
+    	["What do you prefer . . .?", "Dresses","Jeans", "Skirts", "All of the above"],
+    	["What do you normaly wear of a daily basis?", "Work out clothing", "Casul Clothing", "Dressy CLothing", "What ever You feel like" ]
+    ];
+
+    function _(x) {
+    	return document.getElementbyId(x);
+    	}
+
+    function renderQuestion() {
+    	Fashion_Finder_Quiz = _("Fashion_Finder_Quiz");
+    	if(pos >= questions.length){
+    		Fashion_Finder_Quiz.innerHTML = "<h2> These are your results of "+question+"</h2>""
+    			_("quiz_resuts").innerHTML = " Quiz Complete;
+    			pos = 0;
+    	}
+    	("test_status").innerHTML = "Question " + (pos+1) + " of "+ questions.length;
+    	question = questions[pos][0];
+    	chA = questions[pos][1];
+    	chB = questions[pos][2];
+    	chC = questions[pos][3];
+    	chD = questions[pos][4];
+    		Fashion_Finder_Quiz.innerHTML = "<h3>"+question+"</h3>";
+    	Fashion_Finder_Quiz.innerHTML += "<input type='radio' name='choices' value='A'> "+chA+"<br>";
+    	Fashion_Finder_Quiz.innerHTML += "<input type='radio' name='choices' value='B'> "+chB+"<br>";
+    	Fashion_Finder_Quiz.innerHTML += "<input type='radio' name='choices' value='C'> "+chC+"<br>";
+    	Fashion_Finder_Quiz.innerHTML += "<input type='radio' name='choices' value='D'> "+chD+"<br><br>";
+    	Fashion_Finder_Quiz.innerHTML += "<button onclick='checkAnswer()'>Submit Question</button>";
+
+    }
+
+    function choicestally(){
+      if choice_a +1
+
+    }
+  </script>
+  <h2 id="quiz_results"></h2>
+  <div id="Fashion_Finder_Quiz"></div>
 </body>
 </html>
