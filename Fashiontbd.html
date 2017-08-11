@@ -7,7 +7,7 @@
 
   <body>
   <script type="text/javascript">
-    var pos = 0, Fashion_Finder_Quiz, quiz_results, questions, chA, chB, chC, chD, choice_a = 0, choice_b = 0, choice_c = 0 choice_d = 0
+    var pos = 0, Fashion_Finder_Quiz, quiz_results, questions, chA, chB, chC, chD, choice_a = 0, choice_b = 0, choice_c = 0, choice_d = 0
     var questions =[
     	["What climate do you live in ?", "Tropical", "Polar", "Dry", "Mild"],
     	["What do you prefer . . .?", "Dresses","Jeans", "Skirts", "All of the above"],
@@ -27,21 +27,27 @@
     	}
     	("test_status").innerHTML = "Question " + (pos+1) + " of "+ questions.length;
     	question = questions[pos][0];
-    	chA = questions[pos][1];
-    	chB = questions[pos][2];
-    	chC = questions[pos][3];
-    	chD = questions[pos][4];
+    	choice_a = questions[pos][1];
+    	choice_b = questions[pos][2];
+    	choice_c = questions[pos][3];
+    	choice_d = questions[pos][4];
     		Fashion_Finder_Quiz.innerHTML = "<h3>"+question+"</h3>";
-    	Fashion_Finder_Quiz.innerHTML += "<input type='radio' name='choices' value='A'> "+chA+"<br>";
-    	Fashion_Finder_Quiz.innerHTML += "<input type='radio' name='choices' value='B'> "+chB+"<br>";
-    	Fashion_Finder_Quiz.innerHTML += "<input type='radio' name='choices' value='C'> "+chC+"<br>";
-    	Fashion_Finder_Quiz.innerHTML += "<input type='radio' name='choices' value='D'> "+chD+"<br><br>";
-    	Fashion_Finder_Quiz.innerHTML += "<button onclick='checkAnswer()'>Submit Question</button>";
+    	Fashion_Finder_Quiz.innerHTML += "<input type='radio' name='choices' value='A'> "+choice_a+"<br>";
+    	Fashion_Finder_Quiz.innerHTML += "<input type='radio' name='choices' value='B'> "+choice_b+"<br>";
+    	Fashion_Finder_Quiz.innerHTML += "<input type='radio' name='choices' value='C'> "+choice_c+"<br>";
+    	Fashion_Finder_Quiz.innerHTML += "<input type='radio' name='choices' value='D'> "+choice_d+"<br><br>";
+    	Fashion_Finder_Quiz.innerHTML += "<button onclick='choicetally()'>Submit Question</button>";
 
     }
 
     function choicestally(){
-      if choice_a +1
+        choices = 
+          documment.getElementbyName ("choices")
+      for(var i=0; i<choice.length; i++);
+      for(var choice_a = 0; choice_a<choice.length; choice_a + 1 )
+      for(var choice_b = 0; choice_b<choice.length; choice_b + 1 )
+      for(var choice_c = 0; choice_c<choice.length; choice_c + 1 )
+      for(var choice_d = 0; choice_d<choice.length; choice_d + 1 )
 
     }
   </script>
