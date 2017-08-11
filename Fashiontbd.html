@@ -67,53 +67,117 @@
       </ul>
     
     
-    
-  <script type="text/javascript">
-    var pos = 0, Fashion_Finder_Quiz, quiz_results, questions, chA, chB, chC, chD, choice_a = 0, choice_b = 0, choice_c = 0, choice_d = 0
-    var questions =[
-    	["What climate do you live in ?", "Tropical", "Polar", "Dry", "Mild"],
-    	["What do you prefer . . .?", "Dresses","Jeans", "Skirts", "All of the above"],
-    	["What do you normaly wear of a daily basis?", "Work out clothing", "Casul Clothing", "Dressy CLothing", "What ever You feel like" ]
-    ];
+ <!DOCTYPE html>
+<html>
+<head>
+<style>
+<body>
+<div id="main"><!-- open main div -->
+<div id="header"><!-- open header div -->
 
-    function _(x) {
-    	return document.getElementbyId(x);
-    	}
+</div><!-- close header div -->{
+background-color: lightblue;
+font-family: Helvetica;
+}
 
-    function renderQuestion() {
-    	Fashion_Finder_Quiz = _("Fashion_Finder_Quiz");
-    	if(pos >= questions.length){
-    		Fashion_Finder_Quiz.innerHTML = "<h2> These are your results of "+question+"</h2>""
-    			_("quiz_resuts").innerHTML = " Quiz Complete;
-    			pos = 0;
-    	}
-    	("test_status").innerHTML = "Question " + (pos+1) + " of "+ questions.length;
-    	question = questions[pos][0];
-    	choice_a = questions[pos][1];
-    	choice_b = questions[pos][2];
-    	choice_c = questions[pos][3];
-    	choice_d = questions[pos][4];
-    		Fashion_Finder_Quiz.innerHTML = "<h3>"+question+"</h3>";
-    	Fashion_Finder_Quiz.innerHTML += "<input type='radio' name='choices' value='A'> "+choice_a+"<br>";
-    	Fashion_Finder_Quiz.innerHTML += "<input type='radio' name='choices' value='B'> "+choice_b+"<br>";
-    	Fashion_Finder_Quiz.innerHTML += "<input type='radio' name='choices' value='C'> "+choice_c+"<br>";
-    	Fashion_Finder_Quiz.innerHTML += "<input type='radio' name='choices' value='D'> "+choice_d+"<br><br>";
-    	Fashion_Finder_Quiz.innerHTML += "<button onclick='choicetally()'>Submit Question</button>";
+</style>
+</head>
+<form id="form1">
+<fieldset>
+<h2>When it comes to clothes are you...?</h2>
+<label for="var_string"><input type="radio" name="variable" value="1" />Laid back.</label>
+<label for="var_join"><input type="radio" name="variable" value="2" />A free spirit .</label>
+<label for="var_info"><input type="radio" name="variable" value="3" />Trendy </label>
+<label for="var_condition"><input type="radio" name="variable" value="4" />Conservative.</label>
 
-    }
+<h2>What do you prefer? </h2>
+<label for="sub_string"><input type="radio" name="sub" value="1" />Jeans.</label>
+<label for="sub_join"><input type="radio" name="sub" value="2" />Leggings.</label>
+<label for="sub_info"><input type="radio" name="sub" value="3" />Dresses</label>
+<label for="sub_condition"><input type="radio" name="sub" value="4" />All of the above.</label>
 
-    function choicestally(){
-        choices = 
-          documment.getElementbyName ("choices")
-      for(var i=0; i<choice.length; i++);
-      for(var choice_a = 0; choice_a<choice.length; choice_a + 1 )
-      for(var choice_b = 0; choice_b<choice.length; choice_b + 1 )
-      for(var choice_c = 0; choice_c<choice.length; choice_c + 1 )
-      for(var choice_d = 0; choice_d<choice.length; choice_d + 1 )
+<h2>What do you wear on a daily basis?</h2>
+<label for="cat_string"><input type="radio" name="con" value="1" />Whatever i feel like .</label>
+<label for="cat_join"><input type="radio" name="con" value="2" />Sporty clothing.</label>
+<label for="cat_info"><input type="radio" name="con" value="3" /> Dressy Clothing </label>
+<label for="cat_condition"><input type="radio" name="con" value="4" />Casual Clothing.</label>
 
-    }
-  </script>
-  <h2 id="quiz_results"></h2>
-  <div id="Fashion_Finder_Quiz"></div>
+<h2>Do you mostly like. . .</h2>
+<label for="if_string"><input type="radio" name="ifstate" value="1" />Dark colored clothing</label>
+<label for="if_join"><input type="radio" name="ifstate" value="2" />No preference.</label>
+<label for="if_info"><input type="radio" name="ifstate" value="3" />Light colored clothing</label>
+<label for="if_condition"><input type="radio" name="ifstate" value="4" />Whatever I am feeling that day.</label>
+
+<h2>What would your friends categorize your style as?</h2>
+<label for="car_string"><input type="radio" name="variable" value="1" />Grunge.</label>
+<label for="car_join"><input type="radio" name="variable" value="2" />A mix.</label>
+<label for="car_info"><input type="radio" name="variable" value="3" />Girly</label>
+<label for="car_condition"><input type="radio" name="variable" value="4" />Tomboy.</label>
+
+<h2>Do you wear accessories often?</h2>
+<label for="nub_string"><input type="radio" name="sub" value="1" />Whenever I feel like it</label>
+<label for="nub_join"><input type="radio" name="sub" value="2" />Never</label>
+<label for="nub_info"><input type="radio" name="sub" value="3" />Almost everyday</label>
+<label for="nub_condition"><input type="radio" name="sub" value="4" />Once in awhile</label>
+
+<h2>Which accessories do you wear?</h2>
+<label for="bat_string"><input type="radio" name="con" value="1" />Tattoo chokers.</label>
+<label for="bat_join"><input type="radio" name="con" value="2" />Hats.</label>
+<label for="bat_info"><input type="radio" name="con" value="3" />Jewerly</label>
+<label for="bat_condition"><input type="radio" name="con" value="4" />None.</label>
+
+<h2>Which of these would you consider your style?</h2>
+<label for="of_string"><input type="radio" name="ifstate" value="1" />Punk.</label>
+<label for="of_join"><input type="radio" name="ifstate" value="2" />Comfortable.</label>
+<label for="of_info"><input type="radio" name="ifstate" value="3" />Fancy and Classy</label>
+<label for="of_condition"><input type="radio" name="ifstate" value="4" />Simple.</label>
+
+<h2>What do you like to do on your free time?</h2>
+<label for="sub_string"><input type="radio" name="sub" value="1" />Whatever I feel like doing.</label>
+<label for="sub_join"><input type="radio" name="sub" value="2" />Exercise</label>
+<label for="sub_info"><input type="radio" name="sub" value="3" />Stay inside</label>
+<label for="sub_condition"><input type="radio" name="sub" value="4" />Be outdoors.</label>
+
+
+<h2>What kind of music do you mostly listen to?</h2>
+<label for="sniff_string"><input type="radio" name="ifstate" value="1" />Rock/Punk.</label>
+<label for="sniff_join"><input type="radio" name="ifstate" value="2" />Pop.</label>
+<label for="sniff_info"><input type="radio" name="ifstate" value="3" />Other</label>
+<label for="sniff_condition"><input type="radio" name="ifstate" value="4" />Hip-Hop/Rap.</label>
+
+<h2>What is your favorite season?</h2>
+<label for="bub_string"><input type="radio" name="sub" value="1" />Fall</label>
+<label for="bub_join"><input type="radio" name="sub" value="2" />Summer/Sping.</label>
+<label for="bub_info"><input type="radio" name="sub" value="3" />Winter</label>
+<label for="bub_condition"><input type="radio" name="sub" value="4" />All of the above.</label>
+
+<h2>What makes you feel like yourself the most?</h2>
+<label for="tub_string"><input type="radio" name="sub" value="1" />An oversized jean jacket</label>
+<label for="tub_join"><input type="radio" name="sub" value="2" />Your favorite pair of sneakers</label>
+<label for="tub_info"><input type="radio" name="sub" value="3" />A pair of heals</label>
+<label for="tub_condition"><input type="radio" name="sub" value="4" />A hoodie.</label>
+
+<h2>Which is more of your style?</h2>
+<label for="tat_string"><input type="radio" name="con" value="1" /><img src="https://i5.walmartimages.com/asr/6ea69d57-d166-4979-8764-a81b0012e8c7_1.0e5b8aca8632c7f9edf9187041e0cc82.jpeg?odnHeight=180&odnWidth=180&odnBg=FFFFF" style="width:300;height:300px;"></label>
+<label for="tat_join"><input type="radio" name="con" value="2" /><img src="https://s7d2.scene7.com/is/image/dkscdn/16NIKWTMPCRXXXXXXAPB_Anthracite_White_Wolf_Gre/?$DSG_ProductCard$" style="width:300;"height:300px;"></label>
+<label for="tat_info"><input type="radio" name="con" value="3" /><img src="https://i.pinimg.com/236x/6c/85/d6/6c85d605f5b18c277dceeb41409baf40--green-pleated-skirt-green-skirts.jpg" style="width:300;height:300px;"></label>
+<label for="tat_condition"><input type="radio" name="con" value="4" /><img src="http://bpc.h-cdn.co/assets/17/11/480x480/gallery-1489526907-hm-distressed-high-waist-jean-shorts.jpg" style="width:300;height:300px;"></label>
+
+<button type="submit" value="Submit">Submit</button>
+</fieldset>
+</form>
+<p>Your Style is: <span id="style">__</span></p>
+<p id="style"></p>
+
+<script src="Streamline/streamline.js"></script>
+
+
+
+
+
+</body>
+</html>
+
+
 </body>
 </html>
