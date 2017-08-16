@@ -78,13 +78,6 @@ margin-top: 20px;
 
 
 
-
-
-
-
-
-
-
 <button type="submit" value="Submit">Submit</button>
 </form>
 
@@ -92,6 +85,7 @@ margin-top: 20px;
 <p id="answer2"></p>
 <p id="answer3"></p>
 <p id="answer4"></p>
+<p id="answer5"></p>
 
 
 </div>
@@ -147,7 +141,7 @@ margin-top: 20px;
 	  //document.getElementById("answer2").innerHTML = spoon;
 	  //document.getElementById("answer3").innerHTML = willie;
 	  
-	  all = [Grunge,Workout,Dressy];
+	  all = [Grunge,Workout,Dressy, Comfy];
 	  
 	//get the max score  in the array
 	maxscore = Math.max.apply(Math,all);
@@ -170,7 +164,7 @@ scores = [{index:0, feedback: "ducks"},
 //loop to match index to score and reply with feedback
 for(i=0;i<scores.length; i++) {
 if(highest == scores[i].index) {
-document.getElementById("answer4").innerHTML = scores[i].feedback;
+document.getElementById("answer5").innerHTML = scores[i].feedback;
 }
 }
 
