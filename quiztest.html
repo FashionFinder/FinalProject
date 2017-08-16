@@ -47,23 +47,41 @@ margin-top: 20px;
 <label><input type="radio" name="style" id="Grunge" value="Grunge" />Dark Clothing</label>
 <label><input type="radio" name="style" id="Workout" value="Workout" />No prefrence </label>
 <label><input type="radio" name="style" id="Dressy" value="Dressy" />Light colored Clothing</label>
+<label><input type="radio" name="style" id="Comfy" value="Comfy" />What ever im feeling that day</label>
 
 
 <p>Do you wear accesories often?</p>
 <label><input type="radio" name="style1" id="Grunge1" value="Grunge" />Whenever i feel like it</label>
 <label><input type="radio" name="style1" id="Workout1" value="Workout" />Never</label>
 <label><input type="radio"  name="style1"id="Dressy1" value="Dressy" />Almost every day</label>
+<label><input type="radio" name="style1" id="Comfy1" value="Comfy" />Once in a while</label>
 
 <p>What's your favorite style of music?</p>
 <label><input type="radio" name="genre" id="Grunge2" value="Grunge" />Rock/punk</label>
 <label><input type="radio" name="genre" id="Workout2" value="Workout" />Pop</label>
 <label><input type="radio" name="genre" id="Dressy2" value="Dressy" />Other</label>
+<label><input type="radio" name="genre" id="Comfy2" value="Comfy" />Hip-Hop/Rap</label>
 
 
 <p>When it comes to clothes are you . . .?</p>
 <label><input type="radio" name="style2" id="Grunge3" value="Grunge" />Laid Back</label>
 <label><input type="radio" name="style2" id="Workout3" value="Workout" /> A free Sprit </label>
 <label><input type="radio" name="style2" id="Dressy3" value="Dressy" />Trendy</label>
+<label><input type="radio" name="style2" id="Comfy3" value="Comfy" />Conservative</label>
+
+	
+<p> What do you prefer</p>
+<label><input type="radio" name="style3" id="Grunge4" value="Grunge" />Jeans</label>
+<label><input type="radio" name="style3" id="Workout4" value="Workout" />Leggings</label>
+<label><input type="radio"  name="style3"id="Dressy4" value="Dressy" />Dresses</label>
+<label><input type="radio" name="style3" id="Comfy4" value="Comfy" />Other</label>
+
+<p>What would your friends categorize your style as?</p></td><td>
+<label><input type="radio" name="style4" id="Grunge6" value="Grunge" />Grunge</label>
+<label><input type="radio" name="style4" id="Workout6" value="Workout" />A mix</label>
+<label><input type="radio" name="style4" id="Dressy6" value="Dressy" />Girly</label>
+<label><input type="radio" name="style4" id="Comfy6" value="Comfy" />Tomboy</label>
+
 
 
 
@@ -81,6 +99,8 @@ margin-top: 20px;
  
     
 	document.getElementById("form1").onsubmit=function() {
+	
+	  style = document.querySelector('input[name = "style"]:checked').value;
 	   
 	  style1 = document.querySelector('input[name = "style1"]:checked').value;
 	   
@@ -88,17 +108,23 @@ margin-top: 20px;
 	 style2 = document.querySelector('input[name = "style2"]:checked').value;
 	   
 	  genre = document.querySelector('input[name = "genre"]:checked').value;
+		
+	  genre2 = document.querySelector('input[name = "style3"]:checked').value;
+		
+	 genre3 = document.querySelector('input[name = "style4"]:checked').value;
 	    
 	  // initialize score variables 
 	  Grunge = 0;
 	  Workout = 0;
 	  Dressy = 0;
+	  Comfy = 0;
 	  
 	  //function to calculate score for each question
 	  function eachscore(x){
 	  if(x == "Grunge") { Grunge = Grunge + 1}
 	  if(x == "Workout") { Workout = Workout + 1}
 	  if(x == "Dressy") { Dressy = Dressy + 1}
+	  if(x == "Comfy") { Comfy = Comfy + 1}
 	  }
 	  // for the above function, you could also change the 1 to a variable so you could give more points for certain questions
 	  
@@ -106,6 +132,8 @@ margin-top: 20px;
 	  eachscore(eval("style1"));
 	  eachscore(eval("style2"));
 	  eachscore(eval("genre"));
+	  eachscore(eval("genre3"));
+	  eachscore(eval("genre2"));
 	  
 	  
 	  
@@ -129,7 +157,8 @@ margin-top: 20px;
 // object holding scores and feedback	
 scores = [{index:0, feedback: "ducks"},
 {index:1, feedback: "Minihorse"},
-{index:2, feedback: "Bread"}];
+{index:2, feedback: "Bread"},
+{index:2, feedback: "unicorns"}];
 
 
 //loop to match index to score and reply with feedback
