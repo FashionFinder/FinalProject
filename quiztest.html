@@ -40,23 +40,32 @@ margin-top: 20px;
 </head>
 <body>
 <div id="main">
-<div id="header"><h1>Which Austin musical act are you most like?</h1></div>
+<div id="header"><h1>Style?</h1></div>
 
 <form  id="form1">
-<p>How old are you?</p></td><td>
-<label><input type="radio" name="age" id="young" value="quiet" />under 18</label>
-<label><input type="radio" name="age" id="mid" value="spoon" />19-34</label>
-<label><input type="radio" name="age" id="old" value="willie" />34+</label>
+<p>Do you like mostly . . .?</p></td><td>
+<label><input type="radio" name="style" id="Grunge" value="Grunge" />Dark Clothing</label>
+<label><input type="radio" name="style" id="Workout" value="Workout" />No prefrence </label>
+<label><input type="radio" name="style" id="Dressy" value="Dressy" />Light colored Clothing</label>
 
-<p>What would you prefer to do?</p>
-<label><input type="radio" name="activity" id="party" value="quiet" />Party</label>
-<label><input type="radio" name="activity" id="rock" value="spoon" />Rock out</label>
-<label><input type="radio"  name="activity"id="beer" value="willie" />Drink beer</label>
+
+<p>Do you wear accesories often?</p>
+<label><input type="radio" name="style1" id="Grunge1" value="Grunge" />Whenever i feel like it</label>
+<label><input type="radio" name="style1" id="Workout1" value="Workout" />Never</label>
+<label><input type="radio"  name="style1"id="Dressy1" value="Dressy" />Almost every day</label>
 
 <p>What's your favorite style of music?</p>
-<label><input type="radio" name="genre" id="rock2" value="quiet" />Rock</label>
-<label><input type="radio" name="genre" id="indie" value="spoon" />Indie</label>
-<label><input type="radio" name="genre" id="country" value="willie" />Country</label>
+<label><input type="radio" name="genre" id="Grunge2" value="Grunge" />Rock/punk</label>
+<label><input type="radio" name="genre" id="Workout2" value="Workout" />Pop</label>
+<label><input type="radio" name="genre" id="Dressy2" value="Dressy" />Other</label>
+
+
+<p>When it comes to clothes are you . . .?</p>
+<label><input type="radio" name="style2" id="Grunge3" value="Grunge" />Laid Back</label>
+<label><input type="radio" name="style2" id="Workout3" value="Workout" /> A free Sprit </label>
+<label><input type="radio" name="style2" id="Dressy3" value="Dressy" />Trendy</label>
+
+
 
 
 <button type="submit" value="Submit">Submit</button>
@@ -73,29 +82,29 @@ margin-top: 20px;
     
 	document.getElementById("form1").onsubmit=function() {
 	   
-	  age = document.querySelector('input[name = "age"]:checked').value;
+	  style1 = document.querySelector('input[name = "style1"]:checked').value;
 	   
 	  
-	  activity = document.querySelector('input[name = "activity"]:checked').value;
+	 style2 = document.querySelector('input[name = "style2"]:checked').value;
 	   
 	  genre = document.querySelector('input[name = "genre"]:checked').value;
 	    
 	  // initialize score variables 
-	  quiet = 0;
-	  spoon = 0;
-	  willie = 0;
+	  Grunge = 0;
+	  Workout = 0;
+	  Dressy = 0;
 	  
 	  //function to calculate score for each question
 	  function eachscore(x){
-	  if(x == "quiet") { quiet = quiet + 1}
-	  if(x == "spoon") { spoon = spoon + 1}
-	  if(x == "willie") { willie = willie + 1}
+	  if(x == "Grunge") { Grunge = Grunge + 1}
+	  if(x == "Workout") { Workout = Workout + 1}
+	  if(x == "Dressy") { Dressy = Dressy + 1}
 	  }
 	  // for the above function, you could also change the 1 to a variable so you could give more points for certain questions
 	  
 	  //call function for each question
-	  eachscore(eval("age"));
-	  eachscore(eval("activity"));
+	  eachscore(eval("style1"));
+	  eachscore(eval("style2"));
 	  eachscore(eval("genre"));
 	  
 	  
@@ -104,7 +113,7 @@ margin-top: 20px;
 	  //document.getElementById("answer2").innerHTML = spoon;
 	  //document.getElementById("answer3").innerHTML = willie;
 	  
-	  all = [quiet, spoon, willie];
+	  all = [Grunge,Workout,Dressy];
 	  
 	//get the max score  in the array
 	maxscore = Math.max.apply(Math,all);
@@ -118,9 +127,9 @@ margin-top: 20px;
 	
 
 // object holding scores and feedback	
-scores = [{index:0, feedback: "You got Quiet Company"},
-{index:1, feedback: "You got Spoon"},
-{index:2, feedback: "You got Willie Nelson"}];
+scores = [{index:0, feedback: "ducks"},
+{index:1, feedback: "Minihorse"},
+{index:2, feedback: "Bread"}];
 
 
 //loop to match index to score and reply with feedback
