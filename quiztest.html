@@ -55,6 +55,12 @@ margin-top: 20px;
 <label><input type="radio" name="style1" id="Workout1" value="Workout" />Never</label>
 <label><input type="radio"  name="style1"id="Dressy1" value="Dressy" />Almost every day</label>
 <label><input type="radio" name="style1" id="Comfy1" value="Comfy" />Once in a while</label>
+	
+<p>When it comes to clothes are you . . .?</p>
+<label><input type="radio" name="style2" id="Grunge3" value="Grunge" />Laid Back</label>
+<label><input type="radio" name="style2" id="Workout3" value="Workout" /> A free Sprit </label>
+<label><input type="radio" name="style2" id="Dressy3" value="Dressy" />Trendy</label>
+<label><input type="radio" name="style2" id="Comfy3" value="Comfy" />Conservative</label>
 
 <p>What's your favorite style of music?</p>
 <label><input type="radio" name="genre" id="Grunge2" value="Grunge" />Rock/punk</label>
@@ -62,12 +68,15 @@ margin-top: 20px;
 <label><input type="radio" name="genre" id="Dressy2" value="Dressy" />Other</label>
 <label><input type="radio" name="genre" id="Comfy2" value="Comfy" />Hip-Hop/Rap</label>
 
+<p> What do you prefer</p>
+<label><input type="radio" name="style3" id="Grunge" value="1" />Jeans</label>
+<label><input type="radio" name="style3" id="Workout" value="2" />Leggings</label>
+<label><input type="radio"  name="style3"id="Dressy" value="3" />Dresses</label>
+<label><input type="radio" name="style3" id="Comfy" value="4" />Other</label>
 
-<p>When it comes to clothes are you . . .?</p>
-<label><input type="radio" name="style2" id="Grunge3" value="Grunge" />Laid Back</label>
-<label><input type="radio" name="style2" id="Workout3" value="Workout" /> A free Sprit </label>
-<label><input type="radio" name="style2" id="Dressy3" value="Dressy" />Trendy</label>
-<label><input type="radio" name="style2" id="Comfy3" value="Comfy" />Conservative</label>
+
+
+
 
 
 
@@ -91,8 +100,9 @@ margin-top: 20px;
 	   
 	  style1 = document.querySelector('input[name = "style1"]:checked').value;
 	   
+	   style2 = document.querySelector('input[name = "style2"]:checked').value;
 	  
-	 style2 = document.querySelector('input[name = "style2"]:checked').value;
+		style3 = document.querySelector('input[name = "style3"]:checked').value;
 	   
 	  genre = document.querySelector('input[name = "genre"]:checked').value;
 		
@@ -121,8 +131,7 @@ margin-top: 20px;
 	  eachscore(eval("style"));
 	  eachscore(eval("style1"));
 	  eachscore(eval("style2"));
-	
-	
+	  eachscore(eval("style3"));
 	  eachscore(eval("genre"));
 
 	  
