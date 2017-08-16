@@ -80,6 +80,12 @@ margin-top: 20px;
 <label><input type="radio" name="style4" id="Dressy" value="3" />Girly</label>
 <label><input type="radio" name="style4" id="Comfy" value="4" />Tomboy</label>
 
+<p>Which accesories do you wear?</p>
+<label><input type="radio" name="style5" id="Grunge" value="1" />Tattoo Chockers</label>
+<label><input type="radio" name="style5" id="Workout" value="2" />Hats</label>
+<label><input type="radio"  name="style5"id="Dressy" value="3" />Jewelry</label>
+<label><input type="radio" name="style5" id="Comfy" value="4" />Never</label>
+
 
 
 
@@ -110,6 +116,8 @@ margin-top: 20px;
 		style3 = document.querySelector('input[name = "style3"]:checked').value;
 		
 		style4 = document.querySelector('input[name = "style4"]:checked').value;
+		
+		style5 = document.querySelector('input[name = "style5"]:checked').value;
 	   
 	  genre = document.querySelector('input[name = "genre"]:checked').value;
 		
@@ -140,6 +148,7 @@ margin-top: 20px;
 	  eachscore(eval("style2"));
 	  eachscore(eval("style3"));
 	  eachscore(eval("style4"));
+	  eachscore(eval("style5"));
 	  eachscore(eval("genre"));
 
 	  
