@@ -107,10 +107,10 @@ margin-top: 20px;
 <label><input type="radio" name="style7" id="Comfy10" value="Comfy" />All of them</label>
 
 <p>What makes you feel most like yourself?</p>
-<label><input type="radio" name="style10" id="Grunge11" value="Grunge" />An oversized jean jacket</label>
-<label><input type="radio" name="style10" id="Workout11" value="Workout" />Your favorite pair of sneakers</label>
-<label><input type="radio"  name="style10"id="Dressy11" value="Dressy" />A pair of heels</label>
-<label><input type="radio" name="style10" id="Comfy11" value="Comfy" />A hoodie</label>
+<label><input type="radio" name="style8" id="Grunge11" value="Grunge" />An oversized jean jacket</label>
+<label><input type="radio" name="style8" id="Workout11" value="Workout" />Your favorite pair of sneakers</label>
+<label><input type="radio"  name="style8"id="Dressy11" value="Dressy" />A pair of heels</label>
+<label><input type="radio" name="style8" id="Comfy11" value="Comfy" />A hoodie</label>
 
 
 
@@ -151,8 +151,6 @@ margin-top: 20px;
 		
 	style7 = document.querySelector('input[name = "style7"]:checked').value);
 		
-	
-		
 	style10 = document.querySelector('input[name = "style10"]:checked').value);
 		 
 
@@ -173,11 +171,20 @@ margin-top: 20px;
 	  // for the above function, you could also change the 1 to a variable so you could give more points for certain questions
 	  
 	  //call function for each question
+	  eachscore(eval("style"));
 	  eachscore(eval("style1"));
 	  eachscore(eval("style2"));
+	  eachscore(eval("style3"));
+	  eachscore(eval("style4"));
+	  eachscore(eval("style5"));
+	  eachscore(eval("style6"));
+	  eachscore(eval("style7"));
+	  eachscore(eval("style8"));	
 	  eachscore(eval("genre"));
-	  eachscore(eval("genre3"));
+	  eachscore(eval("genre1"));
 	  eachscore(eval("genre2"));
+	  
+	  
 	  
 	  
 	  
