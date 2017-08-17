@@ -115,6 +115,13 @@ margin-top: 20px;
 <label><input type="radio" name="style10" id="Workout" value="2" />Comftorable</label>
 <label><input type="radio" name="style10" id="Dressy" value="3" />Fancy and classy</label>
 <label><input type="radio" name="style10" id="Comfy" value="4" />Simple</label>
+	
+<p>Which one would you wear?</p>
+<label><input type="radio" name="genre1" id="Grunge" value="1" /><img src="https://i5.walmartimages.com/asr/6ea69d57-d166-4979-8764-a81b0012e8c7_1.0e5b8aca8632c7f9edf9187041e0cc82.jpeg?odnHeight=180&odnWidth=180&odnBg=FFFFF" style="width:150px;height150px;"></label>
+<label><input type="radio" name="genre1" id="Workout" value="2" /><img src="https://s7d2.scene7.com/is/image/dkscdn/16NIKWTMPCRXXXXXXAPB_Anthracite_White_Wolf_Gre/?$DSG_ProductCard$" style="width:150px;height150px;"></label>
+<label><input type="radio" name="genre1" id="Dressy" value="3" /><img src="https://i.pinimg.com/236x/6c/85/d6/6c85d605f5b18c277dceeb41409baf40--green-pleated-skirt-green-skirts.jpg" style="width:200px;height200px;"></label>
+<label><input type="radio" name="genre1" id="Comfy" value="4" /><img src="http://bpc.h-cdn.co/assets/17/11/480x480/gallery-1489526907-hm-distressed-high-waist-jean-shorts.jpg" style="width:200px;height200px;"></label>
+
 
 
 
@@ -165,6 +172,8 @@ margin-top: 20px;
 	   
 	  genre = document.querySelector('input[name = "genre"]:checked').value;
 		
+	    genre1 = document.querySelector('input[name = "genre1"]:checked').value;
+		
 	
 		
 	
@@ -199,6 +208,7 @@ margin-top: 20px;
 	  eachscore(eval("style9"));
 	  eachscore(eval("style10"));
 	  eachscore(eval("genre"));
+	  eachscore(eval("genre1"));
 
 	  
 	  
