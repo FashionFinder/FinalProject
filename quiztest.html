@@ -109,6 +109,12 @@ margin-top: 20px;
 <label><input type="radio" name="style9" id="Workout" value="2" />Sporty clothing</label>
 <label><input type="radio" name="style9" id="Dressy" value="3" />Dressy clothing</label>
 <label><input type="radio" name="style9" id="Comfy" value="4" />Casual clothing</label>
+	
+<p>Which of these would you consider your style?</p>
+<label><input type="radio" name="style10" id="Grunge" value="1" />Punk</label>
+<label><input type="radio" name="style10" id="Workout" value="2" />Comftorable</label>
+<label><input type="radio" name="style10" id="Dressy" value="3" />Fancy and classy</label>
+<label><input type="radio" name="style10" id="Comfy" value="4" />Simple</label>
 
 
 
@@ -152,6 +158,9 @@ margin-top: 20px;
 		style8 = document.querySelector('input[name = "style8"]:checked').value;
 		
 		style9 = document.querySelector('input[name = "style9"]:checked').value;
+		
+		style10 = document.querySelector('input[name = "style10"]:checked').value;
+	   
 	   
 	   
 	  genre = document.querySelector('input[name = "genre"]:checked').value;
@@ -188,6 +197,7 @@ margin-top: 20px;
 	  eachscore(eval("style7"));
 	  eachscore(eval("style8"));
 	  eachscore(eval("style9"));
+	  eachscore(eval("style10"));
 	  eachscore(eval("genre"));
 
 	  
