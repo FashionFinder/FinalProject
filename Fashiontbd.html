@@ -67,116 +67,291 @@
       </ul>
     
     
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
+<title>mooooo</title>
 <style>
-<body>
-<div id="main"><!-- open main div -->
-<div id="header"><!-- open header div -->
-
-</div><!-- close header div -->{
-background-color: lightblue;
+body {
+background-color: pink;
 font-family: Helvetica;
 }
 
+#main {
+width: 70%;
+border: 1px gray solid;
+margin: auto;
+padding: 10px;
+background-color: white;
+border-radius: 10px;
+}
+
+#header {
+margin-top: 0;
+border: 2px solid black;
+padding: 5px;
+height: 250px;
+}
+
+label {
+width: 250px;
+display: inline-block;
+}
+
+button {
+display: block;
+margin-top: 20px;
+
+}
+
+
 </style>
 </head>
-<form id="form1">
-<fieldset>
-<h2>When it comes to clothes are you...?(conservative:(of dress or taste) sober and conventional.)</h2>
-<label for="var_string"><input type="radio" name="variable" value="1" />Laid back.</label>
-<label for="var_join"><input type="radio" name="variable" value="2" />A free spirit .</label>
-<label for="var_info"><input type="radio" name="variable" value="3" />Trendy </label>
-<label for="var_condition"><input type="radio" name="variable" value="4" />Conservative.</label>
+<body>
+<div id="main">
+<div id="header"><h1><img src="http://onbrandgroup.co.uk/files/2016/03/Style-Logo.png"  style="width:400px;height:250px;"></h1></div>
 
-<h2>What do you prefer? </h2>
-<label for="sub_string"><input type="radio" name="sub" value="1" />Jeans.</label>
-<label for="sub_join"><input type="radio" name="sub" value="2" />Leggings.</label>
-<label for="sub_info"><input type="radio" name="sub" value="3" />Dresses</label>
-<label for="sub_condition"><input type="radio" name="sub" value="4" />All of the above.</label>
-
-<h2>What do you wear on a daily basis?</h2>
-<label for="cat_string"><input type="radio" name="con" value="1" />Whatever i feel like .</label>
-<label for="cat_join"><input type="radio" name="con" value="2" />Sporty clothing.</label>
-<label for="cat_info"><input type="radio" name="con" value="3" /> Dressy Clothing </label>
-<label for="cat_condition"><input type="radio" name="con" value="4" />Casual Clothing.</label>
-
-<h2>Do you mostly like. . .</h2>
-<label for="if_string"><input type="radio" name="ifstate" value="1" />Dark colored clothing</label>
-<label for="if_join"><input type="radio" name="ifstate" value="2" />No preference.</label>
-<label for="if_info"><input type="radio" name="ifstate" value="3" />Light colored clothing</label>
-<label for="if_condition"><input type="radio" name="ifstate" value="4" />Whatever I am feeling that day.</label>
-
-<h2>What would your friends categorize your style as?(Grunge:a style of rock music) </h2>
-<label for="car_string"><input type="radio" name="variable" value="1" />Grunge.</label>
-<label for="car_join"><input type="radio" name="variable" value="2" />A mix.</label>
-<label for="car_info"><input type="radio" name="variable" value="3" />Girly</label>
-<label for="car_condition"><input type="radio" name="variable" value="4" />Tomboy.</label>
-
-<h2>Do you wear accessories often?</h2>
-<label for="nub_string"><input type="radio" name="sub" value="1" />Whenever I feel like it</label>
-<label for="nub_join"><input type="radio" name="sub" value="2" />Never</label>
-<label for="nub_info"><input type="radio" name="sub" value="3" />Almost everyday</label>
-<label for="nub_condition"><input type="radio" name="sub" value="4" />Once in awhile</label>
-
-<h2>Which accessories do you wear?</h2>
-<label for="bat_string"><input type="radio" name="con" value="1" />Tattoo chokers.</label>
-<label for="bat_join"><input type="radio" name="con" value="2" />Hats.</label>
-<label for="bat_info"><input type="radio" name="con" value="3" />Jewerly</label>
-<label for="bat_condition"><input type="radio" name="con" value="4" />None.</label>
-
-<h2>Which of these would you consider your style?</h2>
-<label for="of_string"><input type="radio" name="ifstate" value="1" />Punk.</label>
-<label for="of_join"><input type="radio" name="ifstate" value="2" />Comfortable.</label>
-<label for="of_info"><input type="radio" name="ifstate" value="3" />Fancy and Classy</label>
-<label for="of_condition"><input type="radio" name="ifstate" value="4" />Simple.</label>
-
-<h2>What do you like to do on your free time?</h2>
-<label for="sub_string"><input type="radio" name="sub" value="1" />Whatever I feel like doing.</label>
-<label for="sub_join"><input type="radio" name="sub" value="2" />Exercise</label>
-<label for="sub_info"><input type="radio" name="sub" value="3" />Stay inside</label>
-<label for="sub_condition"><input type="radio" name="sub" value="4" />Be outdoors.</label>
+<form  id="form1">
+<p>Do you like mostly . . .?</p></td><td>
+<label><input type="radio" name="style" id="Grunge" value="Grunge" />Dark Clothing</label>
+<label><input type="radio" name="style" id="Workout" value="Workout" />No prefrence </label>
+<label><input type="radio" name="style" id="Dressy" value="Dressy" />Light colored Clothing</label>
+<label><input type="radio" name="style" id="Comfy" value="Comfy" />What ever im feeling that day</label>
 
 
-<h2>What kind of music do you mostly listen to?</h2>
-<label for="sniff_string"><input type="radio" name="ifstate" value="1" />Rock/Punk.</label>
-<label for="sniff_join"><input type="radio" name="ifstate" value="2" />Pop.</label>
-<label for="sniff_info"><input type="radio" name="ifstate" value="3" />Other</label>
-<label for="sniff_condition"><input type="radio" name="ifstate" value="4" />Hip-Hop/Rap.</label>
+<p>Do you wear accesories often?</p>
+<label><input type="radio" name="style1" id="Grunge1" value="Grunge" />Whenever i feel like it</label>
+<label><input type="radio" name="style1" id="Workout1" value="Workout" />Never</label>
+<label><input type="radio"  name="style1"id="Dressy1" value="Dressy" />Almost every day</label>
+<label><input type="radio" name="style1" id="Comfy1" value="Comfy" />Once in a while</label>
+	
+<p>When it comes to clothes are you . . .?</p>
+<label><input type="radio" name="style2" id="Grunge3" value="Grunge" />Laid Back</label>
+<label><input type="radio" name="style2" id="Workout3" value="Workout" /> A free Sprit </label>
+<label><input type="radio" name="style2" id="Dressy3" value="Dressy" />Trendy</label>
+<label><input type="radio" name="style2" id="Comfy3" value="Comfy" />Conservative</label>
 
-<h2>What is your favorite season?</h2>
-<label for="bub_string"><input type="radio" name="sub" value="1" />Fall</label>
-<label for="bub_join"><input type="radio" name="sub" value="2" />Summer/Sping.</label>
-<label for="bub_info"><input type="radio" name="sub" value="3" />Winter</label>
-<label for="bub_condition"><input type="radio" name="sub" value="4" />All of the above.</label>
+<p>What's your favorite style of music?</p>
+<label><input type="radio" name="genre" id="Grunge2" value="Grunge" />Rock/punk</label>
+<label><input type="radio" name="genre" id="Workout2" value="Workout" />Pop</label>
+<label><input type="radio" name="genre" id="Dressy2" value="Dressy" />Other</label>
+<label><input type="radio" name="genre" id="Comfy2" value="Comfy" />Hip-Hop/Rap</label>
 
-<h2>What makes you feel like yourself the most?</h2>
-<label for="tub_string"><input type="radio" name="sub" value="1" />An oversized jean jacket</label>
-<label for="tub_join"><input type="radio" name="sub" value="2" />Your favorite pair of sneakers</label>
-<label for="tub_info"><input type="radio" name="sub" value="3" />A pair of heals</label>
-<label for="tub_condition"><input type="radio" name="sub" value="4" />A hoodie.</label>
+<p> What do you prefer</p>
+<label><input type="radio" name="style3" id="Grunge" value="1" />Jeans</label>
+<label><input type="radio" name="style3" id="Workout" value="2" />Leggings</label>
+<label><input type="radio"  name="style3"id="Dressy" value="3" />Dresses</label>
+<label><input type="radio" name="style3" id="Comfy" value="4" />Other</label>
 
-<h2>Which is more of your style?</h2>
-<label for="tat_string"><input type="radio" name="con" value="1" /><img src="https://i5.walmartimages.com/asr/6ea69d57-d166-4979-8764-a81b0012e8c7_1.0e5b8aca8632c7f9edf9187041e0cc82.jpeg?odnHeight=180&odnWidth=180&odnBg=FFFFF" style="width:300;height:300px;"></label>
-<label for="tat_join"><input type="radio" name="con" value="2" /><img src="https://s7d2.scene7.com/is/image/dkscdn/16NIKWTMPCRXXXXXXAPB_Anthracite_White_Wolf_Gre/?$DSG_ProductCard$" style="width:300;"height:300px;"></label>
-<label for="tat_info"><input type="radio" name="con" value="3" /><img src="https://i.pinimg.com/236x/6c/85/d6/6c85d605f5b18c277dceeb41409baf40--green-pleated-skirt-green-skirts.jpg" style="width:300;height:300px;"></label>
-<label for="tat_condition"><input type="radio" name="con" value="4" /><img src="http://bpc.h-cdn.co/assets/17/11/480x480/gallery-1489526907-hm-distressed-high-waist-jean-shorts.jpg" style="width:300;height:300px;"></label>
+<p>What would your friends categorize your style as?</p></td><td>
+<label><input type="radio" name="style4" id="Grunge" value="1" />Grunge</label>
+<label><input type="radio" name="style4" id="Workout" value="2" />A mix</label>
+<label><input type="radio" name="style4" id="Dressy" value="3" />Girly</label>
+<label><input type="radio" name="style4" id="Comfy" value="4" />Tomboy</label>
+
+<p>Which accesories do you wear?</p>
+<label><input type="radio" name="style5" id="Grunge" value="1" />Tattoo Chockers</label>
+<label><input type="radio" name="style5" id="Workout" value="2" />Hats</label>
+<label><input type="radio"  name="style5"id="Dressy" value="3" />Jewelry</label>
+<label><input type="radio" name="style5" id="Comfy" value="4" />Never</label>
+
+<p>What do you like to do durring your free time?</p>
+<label><input type="radio" name="style6" id="Grunge" value="1" />What ever i feel like doing</label>
+<label><input type="radio" name="style6" id="Workout" value="2" />Excersise</label>
+<label><input type="radio" name="style6" id="Dressy" value="3" />Be outdoors</label>
+<label><input type="radio" name="style6" id="Comfy" value="4" />Stay inside</label>
+	
+<p>What is your favorite season?</p>
+<label><input type="radio" name="style7" id="Grunge" value="1" />Fall</label>
+<label><input type="radio" name="style7" id="Workout" value="2" />Spring/Summer</label>
+<label><input type="radio"  name="style7"id="Dressy" value="3" />Winter</label>
+<label><input type="radio" name="style7" id="Comfy" value="4" />All of them</label>
+
+<p>What makes you feel most like yourself?</p>
+<label><input type="radio" name="style8" id="Grunge" value="1" />An oversized jean jacket</label>
+<label><input type="radio" name="style8" id="Workout" value="2" />Your favorite pair of sneakers</label>
+<label><input type="radio"  name="style8"id="Dressy" value="3" />A pair of heels</label>
+<label><input type="radio" name="style8" id="Comfy" value="4" />A hoodie</label>
+
+<p>What do you wear on a daily basis?</p>
+<label><input type="radio" name="style9" id="Grunge" value="1" />Whatever I feel like</label>
+<label><input type="radio" name="style9" id="Workout" value="2" />Sporty clothing</label>
+<label><input type="radio" name="style9" id="Dressy" value="3" />Dressy clothing</label>
+<label><input type="radio" name="style9" id="Comfy" value="4" />Casual clothing</label>
+	
+<p>Which of these would you consider your style?</p>
+<label><input type="radio" name="style10" id="Grunge" value="1" />Punk</label>
+<label><input type="radio" name="style10" id="Workout" value="2" />Comftorable</label>
+<label><input type="radio" name="style10" id="Dressy" value="3" />Fancy and classy</label>
+<label><input type="radio" name="style10" id="Comfy" value="4" />Simple</label>
+	
+<p>Which one would you wear?</p>
+<label><input type="radio" name="genre1" id="Grunge" value="1" /><img src="https://i5.walmartimages.com/asr/6ea69d57-d166-4979-8764-a81b0012e8c7_1.0e5b8aca8632c7f9edf9187041e0cc82.jpeg?odnHeight=180&odnWidth=180&odnBg=FFFFF" style="width:150px;height150px;"></label>
+<label><input type="radio" name="genre1" id="Workout" value="2" /><img src="https://s7d2.scene7.com/is/image/dkscdn/16NIKWTMPCRXXXXXXAPB_Anthracite_White_Wolf_Gre/?$DSG_ProductCard$" style="width:150px;height150px;"></label>
+<label><input type="radio" name="genre1" id="Dressy" value="3" /><img src="https://i.pinimg.com/236x/6c/85/d6/6c85d605f5b18c277dceeb41409baf40--green-pleated-skirt-green-skirts.jpg" style="width:200px;height200px;"></label>
+<label><input type="radio" name="genre1" id="Comfy" value="4" /><img src="http://bpc.h-cdn.co/assets/17/11/480x480/gallery-1489526907-hm-distressed-high-waist-jean-shorts.jpg" style="width:200px;height200px;"></label>
+
+
+<p>Which one would you wear?</p></td><td>
+<label><input type="radio" name="genre2" id="Grunge" value="1" /><img src="https://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=143153399" style="width:150px;height150px;"></label>
+<label><input type="radio" name="genre2" id="Workout" value="2" /><img src="http://www.pearlsomani.com/images/nikeshoesuscom/Nike-0116.jpg" style="width:150px;height150px;"></label>
+<label><input type="radio" name="genre2" id="Dressy" value="3" /><img src="http://media.newlookassets.com/i/newlook/368165910/shoe-gallery/view-all-shoes/court-shoes/white-pointed-court-shoes-/?$new_pdp_szoom_image_600$" style="width:150px;height150px;"></label>
+<label><input type="radio" name="genre2" id="Comfy" value="4" /><img src="https://images.vans.com/is/image/Vans/D5IB8C-HERO?$CATEGORY-LANDING-PRODUCT-REC$" style="width:150px;height150px;"></label>
+
+
+<p>Which one would you wear?</p>
+<label><input type="radio" name="genre3" id="Grunge" value="1" /><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKAtZkm8qHo2hj-hO6EBIT9iUUtXRkZN-VAan6dBZRsmQnjVYw" style="width:150px;height:150px;"></label>
+<label><input type="radio" name="genre3" id="Workout" value="2" /><img src="https://images-na.ssl-images-amazon.com/images/I/41q0mv6c3wL._AC_UL260_SR200,260_.jpg" style="width:150px;height:150px;"></label>
+<label><input type="radio"  name="genre3"id="Dressy" value="3" /><img src="https://s-media-cache-ak0.pinimg.com/736x/d2/d3/ef/d2d3efa14b318b55b7be17c22cbdad3b--sequin-crop-top-striped-crop-top.jpg" style="width:150px;height:150px;"></label>
+<label><input type="radio" name="genre3" id="Comfy" value="4" /><img src="https://s-media-cache-ak0.pinimg.com/736x/ca/f5/29/caf529da47d47595645b759840ee7c2e--funny-sweatshirts-funny-shirts.jpg" style="width:150px;height:150px;"></label>
+
+
+
+<p>Which celeb style are you more like??</p>
+<label><input type="radio" name="genre4" id="Grunge" value="1" /><img src="https://s-media-cache-ak0.pinimg.com/originals/92/8f/5b/928f5bb83b2d3f00613165f81b7e3359.jpg" style="width:200px;height200px;"></label>
+<label><input type="radio" name="genre4" id="Workout" value="2" /><img src="https://s-media-cache-ak0.pinimg.com/originals/c8/c7/ed/c8c7eda3a08ec833262c454fab8dc01a.jpg" style="width:200px;height235px;"></label>
+<label><input type="radio" name="genre4" id="Dressy" value="3" /><img src="https://s-media-cache-ak0.pinimg.com/736x/fb/06/9f/fb069fd20fe712ed1a20dab798445826--office-buildings-celebrity-street-styles.jpg" style="width:200px;height200px;"></label>
+<label><input type="radio" name="genre4" id="Comfy" value="4" /><img src="https://s-media-cache-ak0.pinimg.com/236x/c5/8c/11/c58c11779f6f1c7f890ffa59d6aa5e80--selena-gomez-concert-celebrity-outfits.jpg" style="width:200px;height200px;"></label>
+
+
 
 <button type="submit" value="Submit">Submit</button>
-</fieldset>
 </form>
-<p>Your Style is: <span id="style">__</span></p>
-<p id="style"></p>
 
-<script src="Streamline/streamline.js"></script>
+<p id="answer"></p>
+<p id="answer2"></p>
+<p id="answer3"></p>
+<p id="answer4"></p>
+
+</div>
+<script>
+ 
+    
+	document.getElementById("form1").onsubmit=function() {
+	
+	  style = document.querySelector('input[name = "style"]:checked').value;
+	   
+	  style1 = document.querySelector('input[name = "style1"]:checked').value;
+	   
+	   style2 = document.querySelector('input[name = "style2"]:checked').value;
+	  
+		style3 = document.querySelector('input[name = "style3"]:checked').value;
+		
+		style4 = document.querySelector('input[name = "style4"]:checked').value;
+		
+		style5 = document.querySelector('input[name = "style5"]:checked').value;
+		
+		style6 = document.querySelector('input[name = "style6"]:checked').value;
+		
+		style7 = document.querySelector('input[name = "style7"]:checked').value;
+		
+		style8 = document.querySelector('input[name = "style8"]:checked').value;
+		
+		style9 = document.querySelector('input[name = "style9"]:checked').value;
+		
+		style10 = document.querySelector('input[name = "style10"]:checked').value;
+	   
+	   
+	   
+	  genre = document.querySelector('input[name = "genre"]:checked').value;
+		
+	    genre1 = document.querySelector('input[name = "genre1"]:checked').value;
+		
+		genre2 = document.querySelector('input[name = "genre2"]:checked').value;
+		
+		genre3 = document.querySelector('input[name = "genre3"]:checked').value;
+		
+		genre4 = document.querySelector('input[name = "genre4"]:checked').value;
+		
+		
+		
+	
+		
+	
+		
+	
+	    
+	  // initialize score variables 
+	  Grunge = 0;
+	  Workout = 0;
+	  Dressy = 0;
+	  Comfy = 0;
+	  
+	  //function to calculate score for each question
+	  function eachscore(x){
+	  if(x == "Grunge") { Grunge = Grunge + 1}
+	  if(x == "Workout") { Workout = Workout + 1}
+	  if(x == "Dressy") { Dressy = Dressy + 1}
+	  if(x == "Comfy") { Comfy = Comfy + 1}
+	  }
+	  // for the above function, you could also change the 1 to a variable so you could give more points for certain questions
+	  
+	  //call function for each question
+	  eachscore(eval("style"));
+	  eachscore(eval("style1"));
+	  eachscore(eval("style2"));
+	  eachscore(eval("style3"));
+	  eachscore(eval("style4"));
+	  eachscore(eval("style5"));
+	  eachscore(eval("style6"));
+	  eachscore(eval("style7"));
+	  eachscore(eval("style8"));
+	  eachscore(eval("style9"));
+	  eachscore(eval("style10"));
+	  eachscore(eval("genre"));
+	  eachscore(eval("genre1"));
+	  eachscore(eval("genre2"));
+	  eachscore(eval("genre3"));
+	  eachscore(eval("genre4"));
+
+
+	  
+	  
+	  
+	  
+	  
+	  //document.getElementById("answer").innerHTML = quiet;
+	  //document.getElementById("answer2").innerHTML = spoon;
+	  //document.getElementById("answer3").innerHTML = willie;
+	  
+	  all = [Grunge,Workout,Dressy, Comfy];
+	  
+	//get the max score  in the array
+	maxscore = Math.max.apply(Math,all);
+	
+    //figure out which score is the max score by identifying its index number
+	for(i=0; i<all.length; i++) {
+	if(all[i]==maxscore) {
+	highest = i;
+	}
+	}
+	
+
+// object holding scores and feedback	
+scores = [{index:0, feedback: "ducks"},
+{index:1, feedback: "Minihorse"},
+{index:2, feedback: "Bread"},
+{index:3, feedback: "unicorns"}];
+
+
+//loop to match index to score and reply with feedback
+for(i=0;i<scores.length; i++) {
+if(highest == scores[i].index) {
+document.getElementById("answer4").innerHTML = scores[i].feedback;
+}
+}
+
+	   
 
 
 
+		   
+	   return false; // required to not refresh the page; just leave this here
+	   }// end the submit function
+	
 
+</script>
 
-</body>
-</html>
 
 
 </body>
